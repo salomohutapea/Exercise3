@@ -59,31 +59,15 @@ var person2 = {
     "url": "https://swapi.co/api/people/2/"
 };
 
-var person3 = {
-    "name": "R2-D2",
-    "height": "96",
-    "mass": "32",
-    "hair_color": "n/a",
-    "skin_color": "white, blue",
-    "eye_color": "red",
-    "birth_year": "33BBY",
-    "gender": "n/a",
-    "homeworld": "https://swapi.co/api/planets/8/",
-    "films": [
-        "https://swapi.co/api/films/2/",
-        "https://swapi.co/api/films/5/",
-        "https://swapi.co/api/films/4/",
-        "https://swapi.co/api/films/6/",
-        "https://swapi.co/api/films/3/",
-        "https://swapi.co/api/films/1/",
-        "https://swapi.co/api/films/7/"
-    ],
-    "species": [
-        "https://swapi.co/api/species/2/"
-    ],
-    "vehicles": [],
-    "starships": [],
-    "created": "2014-12-10T15:11:50.376000Z",
-    "edited": "2014-12-20T21:17:50.311000Z",
-    "url": "https://swapi.co/api/people/3/"
-};
+person1.height = person2.height; // mengganti height person1 menjadi height person2 yaitu '167'
+person1.films.splice(2, 2); // menghapus array mulai dari index 2, sebanyak 2 buah
+person1.films.pop(); // menghapus nilai pada index terakhir
+
+person2.films.sort(); // mengurutkan nama films
+person2.vehicles.push('jet', 'car'); // menambah 'jet' dan 'car' pada vehicles
+
+console.log("---Person 1-------------------");
+console.log(person1);
+
+console.log("\n" + "---Person 2-------------------");
+console.log(person2);
