@@ -69,8 +69,8 @@ person2.films.sort(); // sort films names
 person2.vehicles.push('jet', 'car'); // add 'jet' and 'car' to vehicles
 person2.vehicles.push(person1.vehicles[1]); // add vehicles[1] in person 1 to vehicles in person 2
 
-console.log("---Person 1-------------------");
+console.log("---Person 1-------------------"); // print person1
 console.log(person1);
 
-console.log("\n" + "---Person 2-------------------");
+console.log("\n" + "---Person 2-------------------"); // print person2
 console.log(person2);
