@@ -59,12 +59,12 @@ var person2 = {
     "url": "https://swapi.co/api/people/2/"
 };
 
-person1.height = person2.height; // mengganti height person1 menjadi height person2 yaitu '167'
-person1.films.splice(2, 2); // menghapus array mulai dari index 2, sebanyak 2 buah
-person1.films.pop(); // menghapus nilai pada index terakhir
+person1.height = person2.height; // change person1.height value to become person2.height (167)
+person1.films.splice(2, 2); // delete  2 array starts from index 2
+person1.films.pop(); // delete last index array
 
-person2.films.sort(); // mengurutkan nama films
-person2.vehicles.push('jet', 'car'); // menambah 'jet' dan 'car' pada vehicles
+person2.films.sort(); // sort films names
+person2.vehicles.push('jet', 'car'); // add 'jet' and 'car' to vehicles
 
 console.log("---Person 1-------------------");
 console.log(person1);
