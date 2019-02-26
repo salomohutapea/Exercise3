@@ -60,6 +60,7 @@ var person2 = {
 };
 
 person1.height = person2.height; // change person1.height value to become person2.height (167)
+
 person1.films.splice(2, 2); // delete  2 array starts from index 2
 person1.films.pop(); // delete last index array
 
