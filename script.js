@@ -63,6 +63,7 @@ person1.height = person2.height; // change person1.height value to become person
 
 person1.films.splice(2, 2); // delete  2 array starts from index 2
 person1.films.pop(); // delete last index array
+person1.starships.unshift("https://swapi.co/api/starships/1/"); // add "https://swapi.co/api/starships/1/" in first array
 
 person2.films.sort(); // sort films names
 person2.vehicles.push('jet', 'car'); // add 'jet' and 'car' to vehicles
