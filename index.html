@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Table of Phone Numbers</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h1>Table of Person</h1>
+
+<table border="1" class="table table-striped table-dark">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Height</th>
+      <th scope="col">Mass</th>
+      <th scope="col">Hair color</th>
+        <th scope="col">Skin color</th>
+        <th scope="col">Eye color</th>
+        <th scope="col">Birth year</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Homeworld</th>
+        <th scope="col">Films</th>
+        <th scope="col">Species</th>
+        <th scope="col">Vehicles</th>
+        <th scope="col">Starships</th>
+        <th scope="col">Created</th>
+        <th scope="col">Edited</th>
+        <th scope="col">URL</th>
+    </tr>
+  </thead>
+
+<script language="javascript" type="text/javascript">
+
+var person =[
+    {
+    "name": "C-3PO",
+    "height": "167",
+    "mass": "75",
+    "hair_color": "n/a",
+    "skin_color": "gold",
+    "eye_color": "yellow",
+    "birth_year": "112BBY",
+    "gender": "n/a",
+    "homeworld": "https://swapi.co/api/planets/1/",
+    "films": [
+        "https://swapi.co/api/films/2/",
+        "https://swapi.co/api/films/5/",
+        "https://swapi.co/api/films/4/",
+        "https://swapi.co/api/films/6/",
+        "https://swapi.co/api/films/3/",
+        "https://swapi.co/api/films/1/"
+    ],
+    "species": [
+        "https://swapi.co/api/species/2/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T15:10:51.357000Z",
+    "edited": "2014-12-20T21:17:50.309000Z",
+    "url": "https://swapi.co/api/people/2/"
+    }, 
+    {
+    "name": "Luke Skywalker",
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+    "homeworld": "https://swapi.co/api/planets/1/",
+    "films": [
+        "https://swapi.co/api/films/2/",
+        "https://swapi.co/api/films/6/",
+        "https://swapi.co/api/films/3/",
+        "https://swapi.co/api/films/1/",
+        "https://swapi.co/api/films/7/"
+    ],
+    "species": [
+        "https://swapi.co/api/species/1/"
+    ],
+    "vehicles": [
+        "https://swapi.co/api/vehicles/14/",
+        "https://swapi.co/api/vehicles/30/"
+    ],
+    "starships": [
+        "https://swapi.co/api/starships/12/",
+        "https://swapi.co/api/starships/22/"
+    ],
+    "created": "2014-12-09T13:50:51.644000Z",
+    "edited": "2014-12-20T21:17:56.891000Z",
+    "url": "https://swapi.co/api/people/1/"
+}];
+
+for (var i=0; i<5; i++) {
+  document.write("<tr><td>" + person[i].name + "</td>");
+    document.write("<td>" + person[i].height + "</td>");
+    document.write("<td>" + person[i].mass + "</td>");
+    document.write("<td>" + person[i].hair_color + "</td>");
+    document.write("<td>" + person[i].skin_color + "</td>");
+    document.write("<td>" + person[i].eye_color + "</td>");
+    document.write("<td>" + person[i].birth_year + "</td>");
+    document.write("<td>" + person[i].gender + "</td>");
+    document.write("<td>" + person[i].homeworld + "</td>");
+    document.write("<td>" + person[i].films + "</td>");
+    document.write("<td>" + person[i].species + "</td>");
+    document.write("<td>" + person[i].vehicles + "</td>");
+    document.write("<td>" + person[i].starships + "</td>");
+    document.write("<td>" + person[i].created + "</td>");
+    document.write("<td>" + person[i].edited + "</td>");
+    document.write("<td>" + person[i].url + "</td>");
+    
+}
+
+//-->
+</script>
+
+</table>
+
+</body>
+</html>
